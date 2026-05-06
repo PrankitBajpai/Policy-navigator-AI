@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url('https://cdn.wallpapersafari.com/30/90/xsEG9r.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+.input {
+  @apply w-full p-3 bg-gray-900 border border-gray-600 rounded-lg text-white;
+}
+
+.btn {
+  @apply bg-emerald-500 hover:bg-emerald-600 px-5 py-2 rounded-lg font-semibold;
+}
+
+.btn-outline {
+  @apply border border-gray-500 px-5 py-2 rounded-lg;
+}

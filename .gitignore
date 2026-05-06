@@ -1,0 +1,26 @@
+# Python
+venv/
+backend/venv/
+__pycache__/
+*.pyc
+
+# Env files
+.env
+backend/.env
+frontend/.env
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Build
+dist/
+build/
+
+# FAISS / Vector DB
+faiss_index/
+vectorstore/
+
+# OS
+.DS_Store
+Thumbs.db
