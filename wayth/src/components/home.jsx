@@ -8,9 +8,7 @@ function Home() {
   const navigate = useNavigate();
 
   return (
-    <div className={darkMode 
-      ? 'bg-[#0f172a] text-white' 
-      : 'bg-[#FDF6EC] text-[#3B2F2F]'}>
+    <div className={darkMode ? 'bg-[#0f172a] text-white' : 'bg-[#FDF6EC] text-[#3B2F2F]'}>
 
       {/* Toggle */}
       <div className="flex justify-end p-4">
@@ -51,17 +49,17 @@ function Home() {
             to answer your questions and recommend the most relevant government schemes.
           </p>
 
-          {/* CTA */}
+          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
             <button
-              onClick={() => navigate('/search')}
+              onClick={() => navigate('/browse')}
               className="px-8 py-3 rounded-full font-semibold bg-amber-500 text-white hover:bg-amber-600 transition"
             >
-              🔍 Search Schemes
+              📂 Browse Schemes
             </button>
 
             <button
-              onClick={() => navigate('/ask')}
+              onClick={() => navigate('/search')}
               className="px-8 py-3 rounded-full font-semibold bg-red-500 text-white hover:bg-red-600 transition"
             >
               🤖 Ask AI
@@ -73,7 +71,7 @@ function Home() {
       {/* FEATURES */}
       <div className="py-20 px-8 md:px-20 grid md:grid-cols-3 gap-10">
 
-        <motion.div 
+        <motion.div
           whileHover={{ scale: 1.05 }}
           className="p-6 rounded-xl bg-white/60 backdrop-blur shadow-md"
         >
@@ -84,7 +82,7 @@ function Home() {
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           whileHover={{ scale: 1.05 }}
           className="p-6 rounded-xl bg-white/60 backdrop-blur shadow-md"
         >
@@ -95,7 +93,7 @@ function Home() {
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           whileHover={{ scale: 1.05 }}
           className="p-6 rounded-xl bg-white/60 backdrop-blur shadow-md"
         >
@@ -111,7 +109,7 @@ function Home() {
       <div className="text-center py-12">
         <h2 className="text-3xl font-bold mb-4">Built With</h2>
         <p className="text-lg opacity-80">
-          Python • FastAPI • LangChain • FAISS • Hugging Face Transformers
+          Python • FastAPI • LangChain • FAISS • Hugging Face Transformers • Groq AI
         </p>
       </div>
 
@@ -119,6 +117,7 @@ function Home() {
       <footer className="bg-amber-600 py-6 text-center text-white font-medium text-lg">
         Made with ❤️ by Prankit Bajpai
       </footer>
+
     </div>
   );
 }

@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Sparkles, Send, RotateCcw, User, Bot } from "lucide-react";
 
-const API_BASE_URL = "http://127.0.0.1:8000";
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+
 
 const quickQueries = [
   "Tell me about PM Kisan Samman Nidhi",
